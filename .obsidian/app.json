@@ -1,4 +1,5 @@
 {
   "livePreview": false,
-  "attachmentFolderPath": "/"
+  "attachmentFolderPath": "/",
+  "defaultViewMode": "preview"
 }
