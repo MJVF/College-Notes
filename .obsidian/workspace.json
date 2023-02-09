@@ -26,13 +26,61 @@
               "type": "markdown",
               "state": {
                 "file": "3E3 - Probability & Statistics/5 - Probability.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "45b3006c50ee5289",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3E3 - Probability & Statistics/2 - Sampling.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "7ea46b68b1835343",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3E3 - Probability & Statistics/3 - Describing Data.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "7f8084f6041e7054",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a09ff2e32d5475cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3E3 - Probability & Statistics/1 - Data Collection.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -98,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3E3 - Probability & Statistics/5 - Probability.md",
+                "file": "3E3 - Probability & Statistics/1 - Data Collection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3E3 - Probability & Statistics/5 - Probability.md",
+                "file": "3E3 - Probability & Statistics/1 - Data Collection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3E3 - Probability & Statistics/5 - Probability.md"
+                "file": "3E3 - Probability & Statistics/1 - Data Collection.md"
               }
             }
           },
@@ -168,15 +216,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c0acbb283f662718",
+  "active": "a09ff2e32d5475cd",
   "lastOpenFiles": [
-    "Untitled.md",
     "3E3 - Probability & Statistics/5 - Probability.md",
+    "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
+    "3E3 - Probability & Statistics/1 - Data Collection.md",
+    "3E3 - Probability & Statistics/2 - Sampling.md",
+    "3E3 - Probability & Statistics/6 - Discrete Random Variables.md",
+    "3E3 - Probability & Statistics/3 - Describing Data.md",
     "Data Collection.md",
     "2023-02-09.md",
     "Pasted image 20230209132952.png",
-    "Pasted image 20230209133205.png",
-    "Pasted image 20230209133256.png",
-    "Untitled.canvas"
+    "Pasted image 20230209133205.png"
   ]
 }
