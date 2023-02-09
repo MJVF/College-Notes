@@ -31,6 +31,8 @@ $\quad$
 $\quad$
 ## -Symmetry and Skewness
 $\quad$
+![[Pasted image 20230209180125.png]]
+
 ## -Measures of Variability
 ```
 Examples:
