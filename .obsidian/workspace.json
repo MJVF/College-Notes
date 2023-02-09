@@ -128,13 +128,21 @@
                 "file": "3E3 - Probability & Statistics/Probability.md"
               }
             }
+          },
+          {
+            "id": "9c860d9477f2f9da",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
