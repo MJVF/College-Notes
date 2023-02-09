@@ -12,8 +12,6 @@
 - [[#Bayes' Theorem]]
 - [[#Application to Reliability Analysis]]
 
-
-test
 ## Definitions and Law of Large Numbers
 ## Combining Events
 ## Mutually Exclusive Events
