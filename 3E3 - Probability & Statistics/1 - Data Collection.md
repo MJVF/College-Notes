@@ -110,6 +110,8 @@ Also, we have _random errors_ depending on the sample actually observed. This de
 
 >__Precision__ shows us how close the measured values are to eachother.
 
+&nbsp;
+
 ![[Pasted image 20230209193319.png|400]]
 
 &nbsp;
