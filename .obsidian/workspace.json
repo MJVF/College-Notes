@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "3E3 - Probability & Statistics/1 - Data Collection.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -26,21 +26,25 @@
               "type": "markdown",
               "state": {
                 "file": "3E3 - Probability & Statistics/2 - Sampling.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "0c490733253b574b",
+            "id": "2c0e1f5010be3d49",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "3E3 - Probability & Statistics/3 - Describing Data.md",
+                "mode": "preview",
+                "source": true
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Strata",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,13 +90,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1f0ec549061dfe63",
@@ -108,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3E3 - Probability & Statistics/2 - Sampling.md",
+                "file": "3E3 - Probability & Statistics/3 - Describing Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3E3 - Probability & Statistics/2 - Sampling.md",
+                "file": "3E3 - Probability & Statistics/3 - Describing Data.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3E3 - Probability & Statistics/2 - Sampling.md"
+                "file": "3E3 - Probability & Statistics/3 - Describing Data.md"
               }
             }
           },
@@ -178,17 +180,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e1f7da3af37e080c",
+  "active": "2c0e1f5010be3d49",
   "lastOpenFiles": [
+    "Images/3e3-img/Pasted image 20230211174824.png",
+    "3E3 - Probability & Statistics/3 - Describing Data.md",
+    "Images/3e3-img/Pasted image 20230211170149.png",
     "3E3 - Probability & Statistics/2 - Sampling.md",
+    "^3-4.md",
+    "3E3 - Probability & Statistics/FORMULAS.md",
     "3E3 - Probability & Statistics/1 - Data Collection.md",
-    "3C8 - Digital Circuits Design/Multivibrator Circuit Class.md",
-    "Project 3C8.md",
-    "README.md",
-    "^.md",
-    "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
-    "Images/Pasted image 20230209191726.png",
-    "Images/Pasted image 20230209180125.png",
-    "3E3 - Probability & Statistics/3 - Describing Data.md"
+    "^1.md",
+    "Images/3e3-img/Pasted image 20230211153941.png",
+    "3C8 - Digital Circuits Design/Multivibrator Circuit Class.md"
   ]
 }

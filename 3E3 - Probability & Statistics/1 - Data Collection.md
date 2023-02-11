@@ -13,9 +13,11 @@ tags:
 - [[#Sampling]]
 - [[#Parameters and Statistics]]
 - [[#Accuracy of Estimates]]
-	- [[#-Bias & Precision]]
-	- [[#-Non-sampling Bias]]
-$\quad$
+	- [[#Bias & Precision]]
+	- [[#Non-sampling Bias]]
+
+&nbsp;
+
 ---
 # Classification of Different Data Types
 
@@ -37,8 +39,8 @@ $\quad$
 ----
 # Scale of Measurement
 
-- ###### [[#^891e66|Qualitative Data]] may be further split into:
-	- __Nominal Classifications:__ Data defined by a _pure classification_, in which the _order_ of the classes has _no practical_ interpretation. e.g _discipline:_
+- ###### [[#^891e66|Qualitative Data]] may be further split into: ^5afe74
+	- __Nominal Classifications:__ Data defined by a _pure classification_, in which the _order_ of the classes has _no practical_ interpretation. e.g _discipline:_ ^a66ec0
 		1. Civil
 		2. Electronic
 		3. Biomedical
@@ -107,7 +109,7 @@ _Statistics_ can be _used to estimate the parameters_ of the population, e.g. he
 ---
 # Accuracy of Estimates
 
-## -Bias & Precision
+## Bias & Precision
 
 As described above, if we use an _inappropriate sampling frame_, our estimates of parameters may have a _systematic bias_. Bias that results from our method of sampling is called _sampling bias_. Other sources of bias exist ([[#-Non-sampling Bias|See later]]). 
 
@@ -125,7 +127,7 @@ Also, we have _random errors_ depending on the sample actually observed. This de
 
 &nbsp;
 
-## -Non-sampling Bias
+## Non-sampling Bias
 
 > This is a form of bias that occurs when _certain groups_ of individuals have a tendency to give _inaccurate responses_ or _not give_ an answer.
 
