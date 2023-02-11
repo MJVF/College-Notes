@@ -1,3 +1,12 @@
+---
+tags:
+- Quantative
+- Qualitative
+- Ordinal
+- Nominal
+- Interval
+- Ratio
+---
 ### Glossary:
 - [[#Classification of Different Data Types]]
 - [[#Scale of Measurement]]
