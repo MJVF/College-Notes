@@ -242,10 +242,9 @@ __A picture representing the collected data, is worth a thousand words!__
 >|5.61|1.50|6.46|5.29|5.64|2.07|1.11|3.32|1.83|7.56||||
 >||||||||||||||
 >
->Construct a [[#Histogram]] represetning this data.
-
-&nbsp;
-
+> Construct a [[#Histogram]] represetning this data.
+> 
+> ---
 >__*SOLUTION*__
 >The first step is to choose the _boundary points_ for the class intervals. To this end, since we have $62$ items, we choose the number of classes as $\sqrt{62} \approx 8$.
 >The data may vary within the range from $1.11$ g/gal to $23.38$ g/gal. Since we have $8$ classes, we choose the range from $1$ -> $25$ g/gal that leads to the [[#^3f14cc|interval width]] of $w = \frac{25-1}{8} = 3$. Now we can construct the _frequency table_.
@@ -287,12 +286,8 @@ __A picture representing the collected data, is worth a thousand words!__
 >|75|75|76|76|76|76|76|79|79|80|
 >|80|80|80|81|82|82|82|83|83|84|
 >|84|84|85|86|86|86|88|90|91|93|
->|||||||||||
-
-^73ecf1
-
-&nbsp;
-
+>||||||||||| ^73ecf1
+> ---
 >__*SOLUTION*__
 > Stem-and-Leaf plot of the geyser data is shown below, where the stem consists of the _tens digit_ and the leaf consists of the _ones digit_. Each line of the stem-and-leaf plot contains all of the sample items with a given stem.
 > 

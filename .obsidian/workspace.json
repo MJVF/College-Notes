@@ -6,7 +6,7 @@
       {
         "id": "7f61adaaf3bef581",
         "type": "tabs",
-        "dimension": 59.852546916890084,
+        "dimension": 57.707774798927616,
         "children": [
           {
             "id": "7b5b73e4c926eab4",
@@ -27,13 +27,21 @@
               "type": "markdown",
               "state": {
                 "file": "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "96ef066926ca5e70",
+            "id": "7b993c3cc902f948",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "945b642eac8fe512",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,22 +51,14 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "d50470f898e45dcd",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
         ],
         "currentTab": 1
       },
       {
-        "id": "2439fe0d0f07995a",
+        "id": "0730a6332cb686dd",
         "type": "tabs",
-        "dimension": 40.147453083109916,
+        "dimension": 42.292225201072384,
         "children": [
           {
             "id": "95b80fc9a3e005a7",
@@ -99,7 +99,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Histograms",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +120,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1f0ec549061dfe63",
@@ -208,15 +209,15 @@
   },
   "active": "5b7063b2e606552d",
   "lastOpenFiles": [
-    "3E3 - Probability & Statistics/FORMULAS.md",
     "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
-    "3E3 - Probability & Statistics/1 - Data Collection.md",
+    "3E3 - Probability & Statistics/FORMULAS.md",
     "3E3 - Probability & Statistics/3 - Describing Data.md",
-    "L04_Numerically_Summarizing_Data.pdf",
-    "3D3 - Computer Networks/Computer_Networking_A_Top-Down_Approach/1 - Computer Networks & the Internet.md",
-    "3C8 - Digital Circuits Design/Multivibrator Circuit Class.md",
-    "README.md",
     "3E3 - Probability & Statistics/2 - Sampling.md",
-    "Images/3e3-img/Pasted image 20230211174824.png"
+    "2023_3C8_PART_TWO_A(1).pdf",
+    "Pasted image 20230212200032.png",
+    "Pasted image 20230212200006.png",
+    "3E3 - Probability & Statistics/1 - Data Collection.md",
+    "L04_Numerically_Summarizing_Data.pdf",
+    "3D3 - Computer Networks/Computer_Networking_A_Top-Down_Approach/1 - Computer Networks & the Internet.md"
   ]
 }
