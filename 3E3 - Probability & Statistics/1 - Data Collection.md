@@ -26,9 +26,9 @@ tags:
 - ###### __Quantative Data:__ ^726f4a
 	- __Numeric Data__ that indicates how much or how many. e.g _height, mass, number of children_
 	- Types:
-		- __Continuous Variables:__ variables can take any value in a certain range. They are usually measured according to some scale. e.g _age, height, mass_ (measured to a given accuracy, i.e age in closest year)
+		- __Continuous Variables:__ variables can take any value in a certain range. They are usually measured according to some scale. e.g _age, height, mass_ (measured to a given accuracy, i.e age in closest year) ^b37fbc
 
-		- __Discrete Variables:__ variables take values from a set that can be listed (commonly integer values). Such variables are often counted. e.g _number of children/subjects passed at leaving cert_ (when a discrete variable takes in a very large number of values, may be treated as continuous)
+		- __Discrete Variables:__ variables take values from a set that can be listed (commonly integer values). Such variables are often counted. e.g _number of children/subjects passed at leaving cert_ (when a discrete variable takes in a very large number of values, may be treated as continuous) ^ede962
 
 &nbsp;
 
@@ -78,6 +78,8 @@ Nominal is weakest, Ratio is strongest.
 Suppose we wish to study a _particular group of individuals_ (or items), e.g. Irish voters, European students or all the bulbs manufactured in a company. 
 
 > The __population__ in a study is the _entire group_ of individuals (or items) that we wish to investigate (as above).  
+
+^a9f7af
 
 Since it is _impractical to observe all_ the individuals in a population, we _observe a sample_ of the population in question.  
 

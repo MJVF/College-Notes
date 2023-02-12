@@ -221,7 +221,7 @@ __A picture representing the collected data, is worth a thousand words!__
 - To construct #Histograms , we need to take the following steps:
 	1. Choose _boundary points_ for the class intervals.
 	2. Compute the #Frequency and #Relative_Frequency for each class. (_Relative frequency_ is optional if the classes all have the same width)
-	3. Compute the _density_ for each class, according to the formula: $$p = \frac{f_{i}}{w},$$ where $p$ represents the density and $f_{i}$ is the _relative frequency_. (_This step is optional if the classes all have the same width._) ^ab7d62
+	3. Compute the _density_ for each class, according to the formula: $$\rho = \frac{f_{i}}{w},$$ where $\rho$ represents the density and $f_{i}$ is the _relative frequency_. (_This step is optional if the classes all have the same width._) ^ab7d62
 	4. Draw a _rectangle_ for each class. 
 		- If the classes all have the _same width_, the heights of the rectangles may be set equal to the _frequencies_, the _relative frequencies_, or the _densities_. 
 		- If the classes __*do not*__ all have the _same width_, the hieghts of the rectangles must be set equal to the _densities_.

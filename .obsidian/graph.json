@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"3E3 - Probability & Statistics\"",
@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 14725458
       }
+    },
+    {
+      "query": "path:\"3D3 - Computer Networks\"",
+      "color": {
+        "a": 1,
+        "rgb": 7885536
+      }
     }
   ],
   "collapse-display": true,
@@ -32,6 +39,6 @@
   "repelStrength": 10.1666666666667,
   "linkStrength": 1,
   "linkDistance": 173,
-  "scale": 0.7696889775047349,
+  "scale": 0.4695740031511337,
   "close": true
 }
