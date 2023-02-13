@@ -89,7 +89,7 @@ Since it is _impractical to observe all_ the individuals in a population, we _ob
 
 &nbsp;
 
-> A __sampling frame__ is a list of members of a population. It may be used to choose a sample.  
+> A __sampling frame__ is a list of members of a population. It may be used to choose a #Sample.  
 
 A sampling frame __may be incomplete or inaccurate__. For example, the Irish electoral register will be a complete sampling frame for the population of eligible voters in Ireland. However, it will not be a complete sampling frame for the population of adult Irish residents.
 
@@ -115,7 +115,7 @@ _Statistics_ can be _used to estimate the parameters_ of the population, e.g. he
 
 As described above, if we use an _inappropriate sampling frame_, our estimates of parameters may have a _systematic bias_. Bias that results from our method of sampling is called _sampling bias_. Other sources of bias exist ([[#-Non-sampling Bias|See later]]). 
 
-Also, we have _random errors_ depending on the sample actually observed. This determines the precision of a study.
+Also, we have _random errors_ depending on the #Sample actually observed. This determines the precision of a study.
 
 &nbsp;
 

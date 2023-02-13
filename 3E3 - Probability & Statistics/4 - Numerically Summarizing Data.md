@@ -29,6 +29,7 @@ tags:
 - Sample Variance ($s^2$) [[#^90b40a| .5.1]] & [[#^a80352| .5.2]]
 - Standard Deviation ($s$) [[#^12dce8| .6.1]] & [[#^a80352| .6.2]]
 - Coefficient of Variation (CV) [[#^981bb1| .7]]
+- Interquartile Range (IQR) [[#^791ea6| .8]]
 
 
 &nbsp;
@@ -52,7 +53,7 @@ tags:
 - then $n$ ordered observations are denoted by:
 - $$x_{(1)} , \, x_{(2)} , \, . . . \, , \, x_{(n)} ,$$
 - where  $x_{(1)} \leq x_{(2)} \leq \, . . . \leq x_{(n)}$. This is simply a list of the obervations from the smallest to the largest.
-- If a value appears $k$ times in the sample, it must appear $k$ times in this ordered list.
+- If a value appears $k$ times in the #Sample, it must appear $k$ times in this ordered list.
 - In this case, the __*index is the rank of the obersvation*__.
 
 &nbsp;
@@ -94,7 +95,7 @@ tags:
 ## The Sample Mode
 
 > The #Mode is useful when we are dealing with [[1 - Data Collection#^ede962|discrete]] or _categorised_ data. (__*not*__ [[1 - Data Collection#^b37fbc|continuous]] data)
-> The mode is the _observation_ (or category, as appropriate) that occurs most frequently in a sample.
+> The mode is the _observation_ (or category, as appropriate) that occurs most frequently in a #Sample.
 
 &nbsp;
 
@@ -324,14 +325,78 @@ $$
 &nbsp;
 
 ## Percentiles & Quartiles
-$\quad$
+
+- The $k^{th}$ #Percentile of a sample for $k$ betwen 0 and 100, _divides_ the sample so that as nearly as possibly $k\%$ of the sample values are _less_ than the $k^{th}$ percentile, and $(100-k)\%$ are _greater_.
+- The $k^{th}$ percentile is denoted by $P_{k}$.
+- The _percentiles_ that split the ordered data into _4 subsamples_ of equal size are called #Quartiles .
+- The #Median divides the sample in _half_. __Quartiles__ divide it as nearly as possile into quarters. A #Sample has _three quartiles_.
+
+&nbsp;
+
+### Finding Quartiles
+
+> Quartiles are found by taking the following steps:
+> - __*Step 1:*__ _Arrange_ the data in _ascending order_.
+> - __*Step 2:*__ Determine the _median_, M, or _second quartile_, $Q_{2}$.
+> - __*Step 3:*__ Divide the data set into _halves_: the observations below (to te left of) M and the observations above M. The first quartile, $Q_{1}$, is the __median of the bottom half__ of the data and the third quartile, $Q_{3}$, is the __median of the top half__ of the data.
+> ![[Pasted image 20230213122159.png|450]]
+
+&nbsp;
+
+### Interquartile Range
+
+> The #Interquartile_Range (IQR) is a _measure of the spread_ of the data. 
+> __*IQR*__ is the range of the _middle 50% of the observations_ in a data set. It is the difference between the third and first quartiles and is found using the formula:
+> $$IQR = Q_{3} - Q_{1}$$
+> The interpetation of the _interquartile range_ is similar to that of the range and #Standard_Deviation .
+> The _more spread_ a set of data has, the _higher_ the interquartile range will be. ^791ea6
+
+&nbsp;
+
 ## Box Plots
-$\quad$
+
+- #Box_Plots are graphics that _presents the #Median _, the _first and third quartiles_, and any #Outliers that are present in a #Sample. 
+- For the purpose of drawing box plots, by convention, any point that is more than $1.5 \times IQR$ above the __third quartile__, or more than $1.5 \times IQR$ below the __first quartile__, is considered an _outlier_. 
+- Some texts define a point that is more than $3 \times IQR$ from the first or third quartile as __an extreme outlier__. 
+- The _bottom and top side_ of the box plot are the _first and third quartiles_, respectively. 
+- A horizontal line is drawn at the __median__, the _“outliers”_ are plotted individually and are _indicated by crosses_ in the plot. 
+- Extending from the top and bottom of the box are vertical lines called __“whiskers”__.
+
+&nbsp;
+
+### Construction of a Box Plot
+
+> - __*Step 1:*__ Compute the _median_ and the _first and third_ #Quartiles of the #Sample 
+> - __*Step 2:*__ Find the _largest sample value_ that is no more than $1.5 \times IQR$ above the third quartile, and the _smallest sample value_ that is no more than $1.5 \times IQR$ below the first quartile. Extend verticle lines (__whiskers__) from the quartile lines to these points.
+> - __*Step 3:*__ Points more than $1.5 \times IQR$ _above the third quartile or below the first quartile_, are designated as outliers. _Plot each outlier individually_.
+>
+>![[Pasted image 20230213125010.png|450]]
+
+&nbsp;
+
+### Description and Comparison of Box Plots
+
+A major advantage of #Box_Plots is that several of them may be placed _side by side_, allowing for easy visual comparison of the features of several samples.
+$\,$
+As an example, comparative box plots for _PM emissions data_ for vehicles driven at high vs. low altitudes are shown in the figure below:
+$\,$
+![[Pasted image 20230213172514.png|400]]
+$\,$
+- The box plots show that vehicles driven at low altitudes tend to have lower emissions.
+- There are several #Outliers among the data for high- altitude vehicles whos values are much larger than any of the values for low-altitude vehicles.
+- We _conclude_ that at high altitudes, vehicles have somewhat highger emissions in general, the #Spread in values is slightly _larger_ than low-altitude vehicles and it is _much larger_ when the outliers are considered.
+
+&nbsp;
+
+### Symmetry and Skewness, and Box Plots
+
+> The figures below show three [[3 - Describing Data#Histogram|histograms]] and their corresponding #Box_Plots for the different data sets that are #Skewed , to the right, symmetric, and to the left.
+> 
+> ![[Pasted image 20230209180125.png|500]]
 
 
 
 
 
-![[Pasted image 20230209180125.png]]
 
 ---

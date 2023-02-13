@@ -31,7 +31,7 @@ tags:
 
 ^a3d9f6
 
-> A sample is a __Simple Random Sample__ (SRS) if the probability of picking any collection of n units from the sampling frame as a sample does not depend on the collection of units.
+> A #Sample is a __Simple Random Sample__ (SRS) if the probability of picking any collection of n units from the sampling frame as a sample does not depend on the collection of units.
 >
 > $\quad$ i.e. individuals are picked completely at random from the population.
 
@@ -69,7 +69,7 @@ tags:
  
 ## Systematic Sampling
 
-> Suppose we wish to sample a fraction, $1 \over k$, of the population. One individual is chosen from the first $k$ units listed in the [[1 - Data Collection#Sampling|sampling frame]], and each $k$ <sup>th</sup> individual is chosen from onwards.
+> Suppose we wish to #Sample a fraction, $1 \over k$, of the population. One individual is chosen from the first $k$ units listed in the [[1 - Data Collection#Sampling|sampling frame]], and each $k$ <sup>th</sup> individual is chosen from onwards.
 > $\quad$ i.e If I want to choose ~$33\%$ of the population, I may choose number 2 from the first 3, then numbers 2, 5, 8, ..... are also picked. (See image below)
 
 - __*Advantages:*__
@@ -111,7 +111,7 @@ $nbsp;
 # Categorisation of Different Sampling Methods
 
 > Sampling methods can be more broadly defined into [[5 - Probability|Probability]] and __Non-Probability__ sampling.
-> __Probability sampling__ occurs when the probability that an individual is picked to be in a sample does not depend on the individual.
+> __Probability sampling__ occurs when the probability that an individual is picked to be in a #Sample does not depend on the individual.
 > The first __3__ methods described above ([[#Simple Random Sample|Simple]], [[#Stratified Random Sample|Stratified]], [[#Systematic Sampling|Systematic]]) are forms of probability sampling.
 
 __*Note:*__ Stratified random sampling is a form of probability sampling as long as the _correct proportions_ of individuals in the various strata are known.

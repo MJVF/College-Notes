@@ -173,7 +173,7 @@ __A picture representing the collected data, is worth a thousand words!__
  
 ## Constructing Pie Charts
 
-#Pie_Charts are typically used to present the relative frequency of [[1 - Data Collection#^891e66|qualitative]] data. In most cases the data are [[1 - Data Collection#^5afe74|nominal]] but [[1 - Data Collection#^5afe74|orindal]] deata can also be displayed in a _pie chart_.
+#Pie_Charts are typically used to present the relative frequency of [[1 - Data Collection#^891e66|qualitative]] data. In most cases the data are [[1 - Data Collection#^5afe74|nominal]] but [[1 - Data Collection#^5afe74|ordinal]] deata can also be displayed in a _pie chart_.
 
 &nbsp;
 
@@ -198,7 +198,7 @@ __A picture representing the collected data, is worth a thousand words!__
 ## Histogram
 
 - #Histograms are used to estimate the distribution of a variable based on a [[1 - Data Collection#Sampling|sample]].
-- _Histogram_ are graphs simliar to the #Bar_Graphs that gives an idea of the _"shape"_ of a sample, indicating regions where the sample points are concentrated and regions where they are sparse.
+- _Histogram_ are graphs simliar to the #Bar_Graphs that gives an idea of the _"shape"_ of a #Sample, indicating regions where the sample points are concentrated and regions where they are sparse.
 - In order to do this, data must first be split into _intervals_ (classes).
 - It is good to have more _intervals/classes_ rather than fewer, but it is also good to have large numbers of _sample points_ in the intervals/classes.
 > If we have $n$ observations, then the number of intervals/classes used, $k$, should be approximately $\sqrt{n}$. Hence, if we have $20$ observations, it is best to use $4$ or $5$ classes ( i.e $k=4$ or $k=5$).

@@ -4,69 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "7f61adaaf3bef581",
+        "id": "ec533cc3397513ba",
         "type": "tabs",
-        "dimension": 57.707774798927616,
+        "dimension": 57.21649484536082,
         "children": [
           {
-            "id": "7b5b73e4c926eab4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3E3 - Probability & Statistics/3 - Describing Data.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "5b7063b2e606552d",
+            "id": "0eb2dfb503f8be8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "7b993c3cc902f948",
+            "id": "8f4b99eb8cb8cecd",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
-          },
-          {
-            "id": "945b642eac8fe512",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3E3 - Probability & Statistics/FORMULAS.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
-        "id": "0730a6332cb686dd",
+        "id": "0955259a2675e18f",
         "type": "tabs",
-        "dimension": 42.292225201072384,
+        "dimension": 42.78350515463917,
         "children": [
           {
-            "id": "95b80fc9a3e005a7",
+            "id": "397ec1a533f79aa1",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "L04_Numerically_Summarizing_Data.pdf"
+                "file": "PDF/L04_Numerically_Summarizing_Data.pdf"
               }
             }
           }
@@ -99,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "histogram",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -207,17 +182,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b7063b2e606552d",
+  "active": "0eb2dfb503f8be8a",
   "lastOpenFiles": [
     "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
-    "3E3 - Probability & Statistics/FORMULAS.md",
-    "3E3 - Probability & Statistics/3 - Describing Data.md",
-    "3E3 - Probability & Statistics/2 - Sampling.md",
-    "2023_3C8_PART_TWO_A(1).pdf",
-    "Pasted image 20230212200032.png",
-    "Pasted image 20230212200006.png",
     "3E3 - Probability & Statistics/1 - Data Collection.md",
-    "L04_Numerically_Summarizing_Data.pdf",
-    "3D3 - Computer Networks/Computer_Networking_A_Top-Down_Approach/1 - Computer Networks & the Internet.md"
+    "3C5 - Telecommunications/11 -.md",
+    "3E3 - Probability & Statistics/2 - Sampling.md",
+    "3E3 - Probability & Statistics/3 - Describing Data.md",
+    "3E3 - Probability & Statistics/FORMULAS.md",
+    "PDF/L04_Numerically_Summarizing_Data.pdf",
+    "PDF/2023_3C8_PART_TWO_A(1).pdf",
+    "Images/3e3-img/Pasted image 20230212201151.png",
+    "Images/3e3-img/Pasted image 20230212200902.png"
   ]
 }
