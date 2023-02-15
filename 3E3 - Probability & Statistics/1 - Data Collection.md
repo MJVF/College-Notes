@@ -1,6 +1,6 @@
 ---
 tags:
-- Quantative
+- Quantitative
 - Qualitative
 - Ordinal
 - Nominal
@@ -19,11 +19,12 @@ tags:
 &nbsp;
 
 ---
+
 # Classification of Different Data Types
 
 ###### <u>Data can be classified in two ways:</u>
 
-- ###### __Quantative Data:__ ^726f4a
+- ###### __Quantitative Data:__ ^726f4a
 	- __Numeric Data__ that indicates how much or how many. e.g _height, mass, number of children_
 	- Types:
 		- __Continuous Variables:__ variables can take any value in a certain range. They are usually measured according to some scale. e.g _age, height, mass_ (measured to a given accuracy, i.e age in closest year) ^b37fbc

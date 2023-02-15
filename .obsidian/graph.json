@@ -27,18 +27,25 @@
         "a": 1,
         "rgb": 7885536
       }
+    },
+    {
+      "query": "path:\"3C5 - Telecommunications\"",
+      "color": {
+        "a": 1,
+        "rgb": 5485008
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": -0.5,
+  "nodeSizeMultiplier": 0.712609186523263,
+  "lineSizeMultiplier": 1.25330084972369,
   "collapse-forces": true,
-  "centerStrength": 0.420768229166667,
-  "repelStrength": 10.1666666666667,
+  "centerStrength": 0.364668132390516,
+  "repelStrength": 9.65119733792858,
   "linkStrength": 1,
-  "linkDistance": 173,
-  "scale": 0.6418611019989705,
+  "linkDistance": 162,
+  "scale": 0.5583540711970673,
   "close": true
 }

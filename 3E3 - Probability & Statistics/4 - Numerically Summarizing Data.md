@@ -88,7 +88,10 @@ tags:
 	1. For __odd__ values of $n$, the #Median has rank $\frac{n+1}{2}$.
 	2. For __even__ values of $n$, the #Median is the average of the two observations with ranks $\frac{n}{2}$ and  $\frac{n}{2} + 1$.
 
->__*NOTE:*__ Half the data are less than or equal to the median and the other half the data are __*strictly greater*__ than the median.
+```ad-note
+Half the data are less than or equal to the median and the other half the data are __*strictly greater*__ than the median.
+```
+
 
 &nbsp;
 
@@ -101,7 +104,8 @@ tags:
 
 ### Examples: Mean, Median, Mode
 
-> __*EXAMPLE 1:*__
+```ad-example
+title: EXAMPLE 1
 > The number of children in 14 fmilies is given below:
 > $\quad \quad \quad$ 4, 2, 0, 0, 4, 3, 0, 1, 3, 2, 1, 2, 0, 6.
 > 
@@ -122,6 +126,7 @@ tags:
 >
 >3. the mode:
 >0 appears most frequently, 4 times, thus the mode is 0.
+```
 
 &nbsp;
 
@@ -136,8 +141,11 @@ The #Mean is much more sensitive to _extreme values_ or errors in data, i.e. #Ou
 > |**Data Set 1:** 3.7, 4.6, 3.9, 3.7, 4.1$\: \: \: \: \: \:\: \: \:$|**Data Set 2:** 37, 4.6, 3.9, 3.7, 4.1$\: \: \: \: \: \:\: \: \:$|
 > |---|---|
 > |median: 3.9 $\: \: \: \: \: \:\: \: \:$mean: 4           |median: 4.1$\: \: \: \: \: \:\: \: \:$mean: 10.66|
-> 
-> __*Note:*__ Outliers are a real problem for data analysts. If a population truly contains outliers, but they are deleted from the sample, the sample will not characterise the population correctly.
+
+```ad-note
+ Outliers are a real problem for data analysts. If a population truly contains outliers, but they are deleted from the sample, the sample will not characterise the population correctly.
+```
+
 
 &nbsp;
 
@@ -168,7 +176,8 @@ In this case, the simplest thing to do is to round $\frac{n \cdot p}{100}$ to th
 
 &nbsp;
 
->__*EXAMPLE 2:*__
+```ad-example
+title: EXAMPLE 2
 > In this article "__Evaluation of Low-Temperature Properties of HMA Mixtures__" (P. Sebaaly, A. Lake, and J. Epps, Journal of Transportation Engineering, 2002: 578–583), the following values of _fracture stress_ (in _mega pascals_) were measured for a sample of $24$ mixtures of hot-mixed asphalt (_HMA_).
 > $$30 \: \quad 75 \: \quad 79 \: \quad 80 \: \quad 80 \: \quad 105 \quad 126 \quad 138 \quad 149 \quad 179 \quad 179 \quad 191$$
 > $$223 \quad 232 \quad 232 \quad 236 \quad 240 \quad 242 \quad 245 \quad 247 \quad 254 \quad 273 \quad 384 \quad 470$$
@@ -182,12 +191,14 @@ In this case, the simplest thing to do is to round $\frac{n \cdot p}{100}$ to th
 >- To calculate the $5\%$ #Trimmed_Mean , we must drop $5\%$ of the data from each end, i.e. $\frac{5 \times 24}{100} = 1.2$ which is rounded off to $1$.
 >- Similiary, to compute $10\%$ and $20\%$ trimmed mean values, we round off $\frac{10 \times 24}{100} = 2.4$ and $\frac{20 \times 24}{100} = 4.8$ to $2$ & $5$ respectively.
 >- __Thus__, the $5\%, 10\%$ and $20\%$ trimmed means can be found as $190.45$, $186.55$ and $194.07$, respectively.
+```
 
 &nbsp;
 
 ## Symmetry and Skewness
 
 > - A [[3 - Describing Data#Histogram|histogram]] is perfectly #Symmetric if its right half is a _mirror image_ of its left half.
+> 
 > ![[Pasted image 20230212200316.png|250]]
 
 &nbsp;
@@ -197,6 +208,7 @@ In this case, the simplest thing to do is to round $\frac{n \cdot p}{100}$ to th
 $\,$
 
 > - A histogram with a long _right-hand_ tail is said to be __*skewed to the right*__, or __*Positively Skewed*__.
+> 
 > ![[Pasted image 20230212200902.png|250]]
 > - For a histogram that is _skewed to the right_, the __mean is greater than the median__ as the mean is near the #center-of-mass of the histogram.
 
@@ -204,6 +216,7 @@ $\,$
 $\,$
 
 > - A histogram with a long _left-hand_ tail is said to be __*skewed to the left*__, or __*Negatively Skewed*__.
+> 
 > ![[Pasted image 20230212201151.png|250]]
 
 
@@ -217,44 +230,60 @@ $\,$
 
 &nbsp;
 
-1. ###### Range
+```ad-important
+title: ###### Range
 The #Range, $R$, is the _difference between_ the _largest_ and the _smallest_ values in a sample. i.e:
 $$R = x_{(n)} - x_{(1)}$$
 This is simple to calculate, but is very _sensitive to **extreme values**_.
-Since it depends only on the two extreme values, it is _rarely used_, as it provides _no information_ about the rest of the sample. ^142d94
+Since it depends only on the two extreme values, it is _rarely used_, as it provides _no information_ about the rest of the sample. 
+```
+^142d94
 
 &nbsp;
 
-2. ###### Sample Variance
+
+```ad-important
+title: ###### Sample Variance
 The #Sample_Variance measures how closely the data are placed around the mean.
 If all the data are _equal_, then the _variance will be zero_. The more dispersed data around the mean, the greater the variance.
 The sample variance is given by $s^2$, where:
-$$s^{2} = \frac{1}{n-1} \sum_{i=1}^{n} (x_{i} - \bar{x} )^{2} = \frac{1}{n-1} \big{(}\sum_{i=1}^{n} x_{i}^{2} - n \bar{x}^{2} \big{)}$$
-It is a measure of the average squared __deviations__ from the #Mean . ^90b40a
-> __*Note:*__ A serious _drawback_ of the sample variance as  a #Measure_of_Spread is that its _units are different_ than the sample values, i.e. they are the squared units.
+$$s^{2} = \frac{1}{n-1} \sum_{i=1}^{n} (x_{i} - \bar{x} )^{2} = \frac{1}{n-1} (\sum_{i=1}^{n} x_{i}^{2} - n \bar{x}^{2}) $$
+It is a measure of the average squared __deviations__ from the #Mean .
+```ad-note
+A serious _drawback_ of the sample variance as  a #Measure_of_Spread is that its _units are different_ than the sample values, i.e. they are the squared units.
+```
+^90b40a
 
 &nbsp;
 
-3. ###### Standard Deviation
+```ad-important
+title: ###### Standard Deviation
 To obtain a #Measure_of_Spread whose units are _the same_ as those of the sample values, we simply take the _square root of the variance_. This quantity is known as the __*Sample #Standard_Deviation*__, $s$, where:
 $$s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (x_{i} - \bar{x} )^{2}} = \sqrt{ \frac{1}{n-1} \big{(}\sum_{i=1}^{n} x_{i}^{2} - n \bar{x}^{2} \big{)}}$$
 It is _preferred_ to the variance as a descriptive measure, since it is a measure of the _average distance_ of an observation from the mean.
 It is thus measured in the _same units_ as the observations themselves.
->__*Note:*__ On scientific calculators the standard deviation is noted as $s_{n-1}$ or $\sigma_{n-1}$ ^12dce8
+```ad-note
+On scientific calculators the standard deviation is noted as $s_{n-1}$ or $\sigma_{n-1}$
+```
+^12dce8
 
 &nbsp;
 
-4. ###### Coefficient of Variation
+```ad-important
+title: ###### Coefficient of Variance
 The #Coefficient_of_Variation (CV) is a measure that allows for comparison in spread between two or more data sets by describing the amount of _spread per unit mean_.
 $$CV = \frac{s}{\bar{x}}$$
 CV is calculated by dividing the [[#^12dce8|standard deviation]] by the [[#^1ebce1|sample mean]]. The sample with the largest CV has the largest __relative spread__.
-A major advantage of the coefficient of variation is that it is _unitless_ and thus, it is _inensitive to units_. ^981bb1
+A major advantage of the coefficient of variation is that it is _unitless_ and thus, it is _inensitive to units_.
+```
+^981bb1
 
 &nbsp;
 
 &nbsp;
 
-> __*EXAMPLE 3:*__
+```ad-example
+title: EXAMPLE 3
 > For the following data sets, calculate the Coefficient of Variation:
 > $$
 > \mathcal{D}_{1} = \{ 100, 100, 100 \} \quad \quad
@@ -266,10 +295,12 @@ A major advantage of the coefficient of variation is that it is _unitless_ and t
 > 1. Since all the data in $\mathcal{D}_{1}$ is constant, its _standard deviation_ is 0, and its average is 100. Thus,  $CV_{1}\% = 100 \times (\frac{0}{100}) = 0\%$
 > 2. The data in $\mathcal{D}_{2}$ has more _variability_. Its _standard deviation_ is 10 and its average is 100. Thus, $CV_{2}\% = 100 \times (\frac{10}{100}) = 10\%$
 > 3. The data in $\mathcal{D}_{3}$ has more _variability_ again. Its _standard deviation_ is approximately 4.32, and its average is 14. Thus, $CV_{3}\% = 100 \times (\frac{4.32}{14}) \approx 30.85\%$
+```
 
 &nbsp;
 
->__*EXAMPLE 4:*__
+```ad-example
+title: EXAMPLE 4
 >Consider the data set in [[#^049e73|Example 1]]:
 >$$0,0,0,0,1,1,2,2,2,3,3,4,4,6$$
 >Calculate the #Sample_Variance , #Standard_Deviation , #Range , and #Coefficient_of_Variation .
@@ -287,7 +318,7 @@ A major advantage of the coefficient of variation is that it is _unitless_ and t
  > $$R = 6 - 0 = 6$$
  > 4. The [[#^981bb1|coefficient of variance]] is given by:
  > $$CV = \frac{1.8397}{2} \approx 0.9199$$
-
+```
 ^1f7186
 
 &nbsp;
@@ -343,13 +374,15 @@ $$
 
 &nbsp;
 
-### Interquartile Range
-
+```ad-important
+title: ### Interquartile Range
 > The #Interquartile_Range (IQR) is a _measure of the spread_ of the data. 
 > __*IQR*__ is the range of the _middle 50% of the observations_ in a data set. It is the difference between the third and first quartiles and is found using the formula:
 > $$IQR = Q_{3} - Q_{1}$$
 > The interpetation of the _interquartile range_ is similar to that of the range and #Standard_Deviation .
-> The _more spread_ a set of data has, the _higher_ the interquartile range will be. ^791ea6
+> The _more spread_ a set of data has, the _higher_ the interquartile range will be.
+```
+^791ea6
 
 &nbsp;
 

@@ -63,11 +63,14 @@ We consider:
 
 ## Use of Graphical and Numerical Methods
 
+```ad-important
+title: Definition
 > [[#Graphical Methods|Graphical methods]] can be used to visually and [[1 - Data Collection#^891e66|qualitatively]] present data and compare variables and samples.
 >
 > They can be used to __illustrate conclusions__, but __*not to draw conclusions*__, since they lack qualitative detail.
 > 
-> #Numerical_Methods can be used to quantitatively present data and compare variables and samples (giving a mental picture).
+> #Numerical_Methods can be used to [[1 - Data Collection#^726f4a|quantitavely]] present data and compare variables and samples (giving a mental picture).
+```
 
 &nbsp;
  
@@ -91,14 +94,17 @@ We consider:
 - When raw qualitative data are collected, we often first determine the number of indivduals within each category.
 
 
-> ##### DEFINITION
+```ad-important
+title: Definition
 >A #Frequency_Distribution lists each category of data and the number of occurrences for each category of data.
+```
 
 &nbsp;
 
 &nbsp;
 
-> __*EXAMPLE 1:*__
+```ad-example
+title: EXAMPLE 1
 > In an event organised by the School of Engineering for the third year students, _data was collected_ upon registration, by _asking the stream_ of each student.
 > $\quad$The tally shows that $22, 30, 34, 41, 33,$ and $40$ Biomedical, Civil, Computer, Electronic and Computer, Electronic, and Mechanical Engineering students, respectively, attended the event. Construct a #Frequency_Distribution table showing the stream of the attendees.
 >
@@ -111,8 +117,9 @@ We consider:
 > |Electronic & Computer||41|
 > |Electronic||33|
 > |Mechanical||40|
-
+```
 ^6558db
+
 
 &nbsp;
 
@@ -121,17 +128,19 @@ Often, we want to know the _relative frequency_ , rather than the frequency.
 
 &nbsp;
 
-> ##### DEFINITION
+```ad-important
+title: Definition
 >The #Relative_Frequency is the _proportion_ (or percent) of observations within a category and is found using the formula:
 > $$Relative \: frequency = \frac{frequency}{sum \: of \: all \: frequencies}$$
 >
 >A __*relative frequency distribution*__ lists each category of data together with the relative frequency.
-
+```
 ^00a149
 
 &nbsp;
 
-> __*EXAMPLE 2:*__
+```ad-example
+title: EXAMPLE 2
 > Using the summarised data in the table of [[#^6558db|Example 1]], find the _relative frequency distribution_.
 >
 > |__*Stream*__||__*Frequency*__|__*Relative Frequency*__|
@@ -145,7 +154,7 @@ Often, we want to know the _relative frequency_ , rather than the frequency.
 > |Mechanical||40|0.2|
 > |||||
 > |__TOTAL__||__200__|__1__|
-
+```
 ^e17086
 
 &nbsp;
@@ -159,15 +168,19 @@ __A picture representing the collected data, is worth a thousand words!__
 
 &nbsp;
 
-> ##### DEFINITION
+```ad-important
+title: Definition
 > #Bar_Graphs are constructed by labeling each category of data o either the horizontal or vertical axis and the #Frequency or #Relative_Frequency of the category on the other axis. _Rectangles_ of equal width are drawn for each category. The height of each rectangle represents the category's _frequency_ or _relative frequency_.
+```
 
 &nbsp;
 
-> __*EXAMPLE 3:*__
+```ad-example
+title: EXAMPLE 3
 > Use the data summarised in the table of [[#^e17086|Example 2]] to construct a _**frequency** bar graph and a **relative frequency** bar graph_.
 >
 > ![[Pasted image 20230211150904.png|600]]
+```
 
 &nbsp;
  
@@ -177,21 +190,24 @@ __A picture representing the collected data, is worth a thousand words!__
 
 &nbsp;
 
-> ##### DEFINITION
+```ad-important
+title: Definition
 > A __*Pie Chart*__ is a circle divided into _sectors_. Each sector represents a category of data. The _area_ of each sector is proportional to the #Frequency of the category.
 >
 >The _angle_ made by a piece of pie representing a given _category_, $i$, in the pie chart is:
 >$$a_{i} = 3.6 \, \cdot \, f_{i}$$
 >where $f_{i}$ is the #Relative_Frequency of category $i$.
-
+```
 ^9e268a
 
 &nbsp;
 
-> __*EXAMPLE 4:*__
+```ad-example
+title: EXAMPLE 4
 > Use the data summarised in the table of [[#^e17086|Example 2]] to construct a _pie chart_.
 > 
 > ![[Pasted image 20230211153941.png|500]]
+```
 
 &nbsp;
  
@@ -228,7 +244,8 @@ __A picture representing the collected data, is worth a thousand words!__
 
 &nbsp;
 
-> __*EXAMPLE 5:*__
+```ad-example
+title: EXAMPLE 5
 > To investigate factors affecting diesel vehicle emissions, data on emissions of _particulate matter_ (PM) for a sample of _62_ vehicles driven at _high altitude_ (approximately one mile above sea level) were collected. All the vehicles were manufactured between 1991 and 1996.
 > 
 >The samples contained roughly equal proportions of _high_ and _low mileage_ vehicles. The observed data, in units of _grams of particulate per gallon_ (g/gal) of fuel consumed, are present in the following.
@@ -243,7 +260,7 @@ __A picture representing the collected data, is worth a thousand words!__
 >||||||||||||||
 >
 > Construct a [[#Histogram]] represetning this data.
-> 
+>
 > ---
 >__*SOLUTION*__
 >The first step is to choose the _boundary points_ for the class intervals. To this end, since we have $62$ items, we choose the number of classes as $\sqrt{62} \approx 8$.
@@ -265,16 +282,23 @@ __A picture representing the collected data, is worth a thousand words!__
 >__*NOW*__, using the information in the _frequency table_, the __*histogram*__ can be drawn as:
 >
 >![[Pasted image 20230211170149.png|600]]
+```
+
+
 
 
 &nbsp;
 
 ## Stem-and-Leaf Plots
 
-- #Stem_and_Leaf_Plots are a simple way to summarise a data set. In a _stem-and-lead plot_ (stem plot), we use the _one or two digits_ to the left of the rightmost digit for the __stem__. Each rightmost digit forms a __leaf_. 
+```ad-important
+title: Definition
+> #Stem_and_Leaf_Plots are a simple way to summarise a data set. In a _stem-and-lead plot_ (stem plot), we use the _one or two digits_ to the left of the rightmost digit for the __stem__. Each rightmost digit forms a __leaf_. 
+```
 
 
->__*EXAMPLE 6:*__
+```ad-example
+title: EXAMPLE 6
 >The geyser "Old Faithful", in Yellowstone National Park, alternates periods of eruption, which typically last from _1.5_ to _4_ minutes, with periods of dormancy, that last longer. The data in the _table below_ present the durations, in minutes, of 60 dormant periods.
 >The list has been sorted into numeric order.
 >
@@ -296,12 +320,16 @@ __A picture representing the collected data, is worth a thousand words!__
 >  The stem-and-leaf plot is a compact way to represent the data. It also gives some indication of its shape.
 >  
 >For the geyser data, we can see that there is relatively few durations in the _60-69_ minute interval, compared with the _50-59_, _70-79_, or _80-89_ minute intervals.
+```
 
 &nbsp;
 
 ## Dot Plots
 
+```ad-important
+title: Definition
 > #Dot_Plots are graphs that can be used to give a rough impression of the shape of a sample.
+```
 
 - To construct a dot plot, for each value in the sample, a vertical column of dots is drawn, with the number of dots in the column equal to the number of times the value appears in the sample.
 - The dot plot gives a good indication of where the sample values are concentrated and where the gaps are. A _Dot Plot_ for the geyser data in [[#^73ecf1|Example 6]] is constructed as:

@@ -1,53 +1,53 @@
 ---
 tags: 
 - Astable
-- Monostable
-- Bistable
-- Multivibrator
 ---
 
 ### Glossary:
-- [[#Monostable Description]]
+- [[#Multivibrator Description]]
 - [[#Astable]]
+- [[#Monostable]]
+- [[#Bistable]]
 ---
-# Monostable Description
+# Multivibrator Description
 
 > #Astable : in which the circuit is not stable in either state - it continually switches from one state to the other. e.g: _clock circuit._
 >
-> #Monostable : in which one of the states is table, but the other state is unstable (transient). A trigger pulse causes the circuit to enter the unstable state.
+> #Monostable : in which one of the states is stable, but the other state is unstable (transient). A _trigger pulse_ causes the circuit to enter the _unstable state_. After entering the _unstable state_, the circuit will return to the stable state after a set time. Such a circuit is useful for creating a _timing period of fixed duration_ in response to some external event.
 >
-> #Bistable : in which
+> #Bistable : in which the circuit is stable in either state. It can be flipped from one state to the other by an _external trigger pulse_. This circuit is also known as a #Flip_Flop . It can store one bit of information, and is widely used in _digital logic and memory_.
 
 ---
 
 # Astable 
 
-- Electronic equivelant of a _pendulum/metronome_
-- Typically used to _implement clock circuits.__
-- Want _all latches/flip-flops_ in a circuit to update or change at the _same time_.
+> - Electronic equivelant of a _pendulum/metronome_
+> - Typically used to _implement clock circuits.__
+> - Want _all latches/flip-flops_ in a circuit to update or change at the _same time_.
+>
+>![[Pasted image 20230213225406.png|300]]
+>
+> - (a) never really used in industry, latches are bad. Career ending?!?!?!
+> 	- most commonly falling/rising (positive/negative) edge triggered multivibrators.
+> - Edge triggered flip flop only activates at one specific instance.
 
->insert image (Astable multivibrator 1/1)
+__Discrete time__ relies on _sampling at the same time_, therefore using a _latch_ you _do not know_ what you are _sampling_. 
 
-- (a) never really used in industry, latches are bad. Career ending?!?!?!
-	- most commonly falling/rising (positive/negative) edge triggered multivibrators.
-- Edge triggered flip flop only activates at one specific instance.
-
-Discrete time relies on sampling at the same time, therefore using a latch you do not use what you are sampling. 
+&nbsp;
 
 # Monostable
 
  > #CD4538 is a dual, precision monostable multivibrator with independant trigger and reset controls.
  > Generates a pulse whos duration can be set in response to an external pulse.
- 
- > insert image monostable multivibrator 1/3
- 
-- B input is usually inverted.
-- T2 = toggle signal within the chip, two reference voltages inside, set by resistor and capacitor.
-- Cd achieves pulse shortening.
+ > $\,$
+ > ![[Pasted image 20230213225856.png|550]]
+ >
+> - B input is usually inverted.
+> - T2 = toggle signal within the chip, two reference voltages inside, set by resistor and capacitor.
+> - Cd achieves pulse shortening.
 
 &nbsp;
 
-> insert image 2/3
 
 - Output pulse width is a function of the profuct of R & C
 > insert image 3/3
