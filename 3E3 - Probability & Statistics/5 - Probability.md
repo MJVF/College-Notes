@@ -19,6 +19,9 @@ tags:
 - Axioms
 - Addition Rule
 - Permutation
+- Conditional_Probability
+- Law_of_Total_Probability
+- Tree_Diagrams
 ---
 
 ### Glossary:
@@ -31,6 +34,7 @@ tags:
 - [[#Counting Methods]]
 	- [[#Permutations]]
 	- [[#Combinations]]
+- [[#Conditional Probability]]
 - [[#Independant Events]]
 - [[#The Multiplication Rule]]
 - [[#The Law of Total Probability]]
@@ -40,7 +44,14 @@ tags:
 &nbsp;
 
 #### Formulas:
-- 
+- Mutually Exclusive [[#^6f35b9| .1]]
+- Addition Rule [[#^6e895a| .2]]
+- Permutations [[#^f30062| .3]]
+- Combinations [[#^477096| .4]]
+- Conditional Probability [[#^6e6ea1| .5]]
+- Independant Events [[#^bb853a| .5.1]] [[#^4ccd06| .5.2]]
+- Intersection of Events (Conditional) [[#^555ae9| .6]]
+- Intersection of Events (Independant) [[#^2b06dc| .7.1]] [[#^0cb1d9| .7.2]]
 
 
 &nbsp;
@@ -235,6 +246,8 @@ title: EXAMPLE 2
 if $E_1$ and $E_2$ are #Mutually_Exclusive events, then $P(E_1 \cup E_2) = P(E_1) + P(E_2)$
 ```
 
+^6f35b9
+
 &nbsp;
 
 ```ad-example
@@ -265,6 +278,8 @@ title: ###### Addition Rule
 The probability of #Union of the events $E_1$ and $E_2$ is:
 $$P(E_1 \cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2)$$
 ```
+
+^6e895a
 
 ````ad-abstract
 title: Proof
@@ -359,6 +374,8 @@ The number of permutations of $k$ objects chosen from a group of $n$ objects is:
 $$\frac{n!}{(n-k)!}$$
 ```
 
+^f30062
+
 ## Combinations
 
 - In some cases, when choosing a set of objects from a larger set, we _do not_ care about the ordering of the chosen objects.
@@ -380,16 +397,199 @@ k
 = \frac{n!}{k!(n-k)!}$$
 ```
 
+^477096
+
+
+&nbsp;
+
+> Sometimes we are interested in counting the number of ordered sequences for objects that are _not at all different_.
+
+```ad-example
+title: EXAMPLE 7
+> Assume that in a class of 12 students, a project is assigned in which the students will work in groups. Three groups are to be formed, consisting of 5, 4, and 3 students. Calculate the number of ways in which the groups can be formed.
+>
+> ---
+> __*SOLUTION:*__
+> The process of dividing the class into 3 groups is performed _sequentially_, as follows:
+> 1. First, we choose 5 students from the total 12 students that can be done in, $\begin{pmatrix}12 \\ 5 \end{pmatrix} = \frac{12!}{5!7!}$ different ways.
+> 2. Second, we choose 4 students from the remaining, $12 - 5 = 7$, students to form the second group. This can be done in, $\begin{pmatrix}7\\4\end{pmatrix} = \frac{7!}{4!3!}$, different ways.
+> 3. Third, we choose 3 students from the remaining, $7-4=3$, students to form the third group. This can be done in $\begin{pmatrix}3\\3\end{pmatrix}=\frac{3!}{3!0!}$, diferent ways.
+> 
+> The third step above is not necessary as group 3, automatically consists of 3 students onc groups 1 and 2 have ben formed.
+> 
+> Notice that the _numerator_ in the final answer is the _factorial of the total group size_, while the denominator is the product of the factorials of teh sizes and groups chosen from it. This holds in general.
+
+```ad-note
+The number of ways of dividing a group of $n$ objects into groups of $k_1, \dots , k_{\mathcal{l}}$ objects, where $k_1 + \dots + k_{\mathcal{l}} = n$, is:
+$$\frac{n!}{k_1! \dots k_{\mathcal{l}}!}$$
+```
+
+&nbsp;
+
+---
+
+
+# Conditional Probability
+
+> That the #Sample_Space, $S$, contains all the possible outcomes of an experiment.
+> Sometimes, we obtain some additional information about an experiment telling us that the outcome comes from a #Subset of $S$.
+> Thus, the probability of an event is based on the _outcomes in a subset_ of $S$.
+
+```ad-important
+title: Definition
+A probability that is based on a part of a #Sample_Space is called a #Conditional_Probability .
+```
+
+> In [[#^1bd154|Example 2]], we discussed a population of 1000 aluminium rods where each rod was classified as too short, too long, or OK, and the diameter was classified as too thin, too thick, or OK. We calculated $P(\text{too short})$ considering the entire sample space. This probability is called #Unconditional_Probability.
+
+- Now, in [[#^1bd154|Example 2]], assume that a rod is sampled, and its length is measured and found to meet specification. What is the probability that the diameter _also_ meets the specification.
+- The knowledge that the __*length meets the specification*__ reduces the sample space to 942 rods.
+
+- Of the 942 rods in this sample space, 900 of them meet the diameter specification. Thus, $P(\text{diameter OK, {GIVEN}, length OK}) = \frac{900}{942}$.
+- Hence the #Conditional_Probability that the rod meets the diameter specification __given__ that it meets the length specification is represented as;
+$$P(\text{diameter OK | length OK})=\frac{900}{942}$$
+
+&nbsp;
+
+```ad-example
+title: EXAMPLE 8
+> Compute the _conditional probability_ $P(\text{diameter OK | length too long})$. Is this the same as the _unconditional probability_ $P(\text{diameter OK})$?
+> 
+> ---
+> __*SOLUTION*__
+> Of the 40 outcomes, 25 meet the diameter specification, thus:
+> $$P(\text{diameter OK | length too long}) = \frac{25}{40}$$.
+> The unconditional probability is $P(\text{diameter OK}) = \frac{928}{1000}$.
+> The _denominator_ of the conditional probability, $\frac{25}{40}$, represents the number of outcomes that satisfy the condition that <u>the rod is too long</u>. While the _numerator_, $25$, represents the number of outcomes that satisfy both the condition that <u>the rod is too long __and__ that the diameter is OK.</u>
+> $$\begin{array}
+.P(\text{diameter OK | length too long}) &=& \frac{\frac{25}{1000}}{\frac{40}{1000}}  \\
+&=& \frac{P(\text{diameter OK and length too long})}{P(\text{length too long})}
+\end{array}$$
+
+Based on this resoning, we can construct a definition for the #Conditional_Probability that holds for __any__ #Sample_Space .
+
+```ad-note
+title: Definition
+Let $E_{1}$ and $E_{2}$ be events with $P(E_{2}) \neq 0$. The conditional probability of $E_1$ given $E_2$ is:
+$$P(E_{1} | E_{2}) = \frac{P(E_{1} \cap E_{2})}{P(E_{2})}$$
+```
+
+^6e6ea1
 
 &nbsp;
 
 ---
 
 # Independant Events
+
+- Sometimes the knowledge that one event has occured does not change the probability that another event occurs.
+- Thus, _conditional_ and _unconditional_ probabilites are the smae, and such events are said to be __#Independant__. This implies that $P(E_{1} \cap E_{2} = P(E_{1})\cdot P(E_{2})$.
+
+```ad-important
+title: Defintion
+Two events $E_1$ and $E_2$ are independant, if the probability of each event remains the same whether or not the other one occurs.
+If $P(E_1) \neq 0$ and $P(E_2) \neq 0$, then $E_1$ and $E_2$ are independant if:
+$$P(E_1 | E_2) \, = \, P(E_1 | E_2^C) \, = \, P(E_1) \quad \quad \text{or,} \quad \quad P(E_2 | E_1) \, = \, P(E_2 | E_1^C) \, = \, P(E_2)$$
+If either $P(E_1) = 0$ or $P(E_2) = 0$, then $E_1$ and $E_2$ are independant. 
+```
+
+^bb853a
+
+&nbsp;
+
+```ad-important
+title: Definition
+- Events $E_1 , \, E_2, \, \dots, \, E_n$ are independant if the probability of each remains the same no matter which of the others occur.
+- Events $E_1 , \, E_2, \, \dots, \, E_n$ are independant if and _only if_ for any subset of these events $E_{i_{1}} , \, E_{i_{2}}, \, \dots, \, E_{i_{k}}$, 
+$$P(E_i | E_{i_{1}} \cap \, \dots \, \cap E_{i_{k}} = P(E_{i})$$
+and,
+$$P(E_{i_{1}} \cap E_{i_{2}} \cap \, \dots \, \cap E_{i_{k}}) = P(E_{i_{1}}) \times P(E_{i_{2}}) \times \, \dots \, \times P(E_{i_{k}})$$
+```
+
+^4ccd06
+
+&nbsp;
+
+```ad-warning
+title: Exercise:
+Find $P(\text{too long})$ and $P(\text{too long | too thin})$ in [[#^6e6ea1|Example 8]].
+	- Are these probabilites different?
+Comment on the independance of the events $E_1$, the rod being too long, and $E_2$, the rod being too short.
+```
+
+&nbsp;
+
 ---
 # The Multiplication Rule
+
+Sometimes, we know $P(E_{1}|E_{2})$ or $P(E_{2}|E_{1})$, and we wish to find $P(E_{1}\cap E_{2})$. Using the formula for [[#^6e6ea1|conditional probability]], given that $P(E_1) \neq 0$ and $P(E_2) \neq 0$,
+$$P(E_{1}\cap E_{2}) \, = \, P(E_{2})\cdot P(E_{1}|E_{2}) \, = \, P(E_{1})\cdot P(E_{2}|E_{1})$$ ^555ae9
+
+If events $E_1$ and $E_2$ are #Independant:
+$$P(E_{1} \cap E_{2}) = P(E_{1}) \cdot P(E_{2})$$ ^2b06dc
+
+This result can be extended to any number of independant events $E_1 , \, E_2, \, \dots, \, E_n$, i.e,
+$$P(E_{1} \cap E_{2} \cap \, \dots \, \cap E_{n}) = P(E_{1})  P(E_{2}) \, \cdots \, P(E_{n})$$ ^0cb1d9
+
+&nbsp;
+
 ---
 # The Law of Total Probability
+
+> Consider the #Sample_Space in the figure below that contains the #Mutually_Exclusive events $A$ and $A'$.
+> 
+> ![[Pasted image 20230216230251.png|200]]
+>
+>From this figure, it is clear that the events $B \cap A$ and $B \cap A'$ are also #Mutually_Exclusive and their union forms the event $B$. Therefore,
+>$$\begin{array}
+.P(B) = P[(B \cap A) \cup (B \cap A')] &=& P(B \cap A) + P(B \cap A')  \\
+&=& P(B|A) \cdot P(A) \, + \, P(B|A') \cdot P(A')
+\end{array}$$
+
+$\,$
+
+> Given the mutually exclusive sets, $E_1 , \, E_2, \, \dots, \, E_n$, this result can be generalised as:
+> $$\begin{array}
+.P(B) &=& P(B\cap E_{1}) + \, \cdots \, + P(B \cap E-n) \\
+&=& \sum_{i=1}^{n} P(B|E_{i}) \cdot P(E_{i})
+\end{array}$$
+>![[Pasted image 20230216231059.png|200]]
+
+&nbsp;
+
+```ad-example
+title: EXAMPLE 9
+
+```
+
+> Customers who purchase a certain make of car can order an engine in any of three _small, medium and large_ sizes. The percentage of sold cars with different engine sizes together with the failure rate in emissions test within two years of purchase are presented in the table below. 
+> - What is the probability that a randomly chosen car will fail an emissions test within two years?
+> 
+> ||||
+> |:---:|:---:|:---:|
+> |__*Engine Size*__|__*Percentage of all cars sold*__|__*Emission test failure rate*__|
+> ||||
+> |Small|45%|10%|
+> |Medium|35%|12%|
+> |Large|20%|15%|
+> ||||
+> 
+> ---
+>__*SOLUTION:*__
+> Let $B$ denote the event that a car _fails_ emissions test, and $A_1$, $A_2$, and $A_3$ denote the events that a car has a small, medium, or large engine size respectively. Thus, $P(A_1) = 0.45$, $P(A_2) = 0.35$, and $P(A_3) = 0.20$
+> 
+> The probabilities that a car fails a test given different engine sizes are stated in the problem, i.e $P(B|A_1) = 0.10$, $P(B|A_2) = 0.12$, and $P(B|A_3) = 0.15$. Thus, using #Law_of_Total_Probability, we have:
+> $$\begin{array}
+P(B) \, &=& \, \sum_{i=1}^{3} P(B|A_{1}) \cdot P(A_{1}) \\
+&=& (0.10)(0.45) + (0.12)(0.35) + (0.15)(0.20) = 0.117
+\end{array}$$
+>
+> ---
+> __*Alternate Solution:*__
+> Sometimes, problems like this example are solved using #Tree_Diagrams 
+> 
+> ![[Pasted image 20230216233257.png|300]]
+
 ---
 # Bayes' Theorem
 ---
