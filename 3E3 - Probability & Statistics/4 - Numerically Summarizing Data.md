@@ -350,9 +350,6 @@ $$
 ^a80352
 - where $n = \sum_{i} n_{i}$ is the total numbr of observations. 
 
-
-
-
 &nbsp;
 
 ## Percentiles & Quartiles
