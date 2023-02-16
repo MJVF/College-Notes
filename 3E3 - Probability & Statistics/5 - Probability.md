@@ -17,6 +17,8 @@ tags:
 - Mutually_Exclusive
 - Probability
 - Axioms
+- Addition Rule
+- Permutation
 ---
 
 ### Glossary:
@@ -27,6 +29,8 @@ tags:
 - [[#Axioms of Probability]]
 - [[#The Addition Rule]]
 - [[#Counting Methods]]
+	- [[#Permutations]]
+	- [[#Combinations]]
 - [[#Independant Events]]
 - [[#The Multiplication Rule]]
 - [[#The Law of Total Probability]]
@@ -219,6 +223,8 @@ title: EXAMPLE 2
 > $$P(\text{too short}) = \frac{10 + 3 + 5}{1000} = \frac{18}{1000} = 0.018$$
 ```
 
+^1bd154
+
 &nbsp;
 
 ---
@@ -226,17 +232,159 @@ title: EXAMPLE 2
 # The Addition Rule
 
 ```ad-note
-if $E_1$ and $E_2$ are #Mut
+if $E_1$ and $E_2$ are #Mutually_Exclusive events, then $P(E_1 \cup E_2) = P(E_1) + P(E_2)$
 ```
 
+&nbsp;
 
+```ad-example
+title: EXAMPLE 3
+> Refer to [[#^1bd154|Example 2]], if a rod is sampled at random, what is the probability that it is either too short or too thick?
+> 
+> ---
+> __*SOLUTION 1:*__
+> Of the 1000 outcomes, the number that are either too short or too thick is: 
+> $$10+3+5+4+13 = 35$$
+> Thus:
+> $$P(\text{too short or too thick}) = \frac{35}{1000}$$
+> ---
+> 
+>__*SOLUTION 2:*__
+> $$\begin{array}
+> .P(\text{too short}) = \frac{18}{1000}, \quad \quad P(\text{too thick}) = \frac{22}{1000}, \quad \quad P(\text{ too short and too thick}) = \frac{5}{1000} \\ \\
+> \, \\
+> P(\text{too short or too thick}) \, = \, P(\text{too short}) \, + \, P(\text{too thick}) \,  - \, P(\text{too short and too thick}) \\
+> = \frac{18}{1000} + \frac{22}{1000} - \frac{5}{1000} = \frac{35}{1000}
+> \end{array}$$
+```
+
+&nbsp;
+
+```ad-important
+title: ###### Addition Rule
+The probability of #Union of the events $E_1$ and $E_2$ is:
+$$P(E_1 \cup E_2) = P(E_1) + P(E_2) - P(E_1 \cap E_2)$$
+```
+
+````ad-abstract
+title: Proof
+```ad-note
+Note first that $E_1 \cup E_2$ can be decomposed into two _disjoint_ events $E_1$ and $E_1^C \cap E_2$ and thus,
+$$P(E_1 \cup E_2) = P(E_1) + P(E_1^C \cap E_2)$$
+```
+Similiarly, $E_2$ is union of the two disjoint events $E_1 \cap E_2$ and $E_1^C \cap E_2$. Hence:
+- $P(E_2) = P(E_1 \cap E_2) + P(E_1^C \cap E_2)$ which can be rearranged as:
+- $P(E_1^C \cap E_2) = P(E_2) - P(E_1 \cap E_2)$ and then subsituted into the formula in the note above to obtain the formula of the #Addition_Rule
+
+````
 
 &nbsp;
 
 ---
 
 # Counting Methods
+
+When computing probabilties, it is sometimes necessary to determine the number of outcomes in a #Sample_Space .
+
+$\,$
+
+````ad-example
+title: EXAMPLE 4
+> A certain make of automobile is available in any of three colours: red, blue, or green, and comes with either a large or small engine. In how many ways can a buyer choose a car?
+> 
+> | | |__*Red*__|__*Blue*__|__*Green*__|
+> |---:|---|:---:|:---:|:---:|
+> || ||||
+> |__*Large*__| |Red, Large|Blue, Large|Green, Large|
+> |__*Small*__| |Red, Small|Blue, Small|Green, Small|
+
+```ad-note
+If an operation can be performed in $n_1$ ways, and if for each of these ways, a second operation can be performed in $n_2$ ways, then the total number of ways o perform the two operations is $n_1 \times n_2$.
+```
+````
+
+&nbsp;
+
+```ad-example
+title: EXAMPLE 5: (Counting with Repetition)
+> How many unique passwords can be made with 4 digits?
+> 
+> ---
+> __*SOLUTION:*__
+> $10 \times 10 \times 10 \times 10 = (10)^4$
+```
+
+$\,$
+
+```ad-example
+title: EXAMPLE 6: (Counting without Repetition)
+> Three members from a 20-member cimmittee are to be randomly selected to serve as chair, vice-chair, and secretary.
+> The first person selected is the chair, the second is the vice-chair, and the third is the secretary.
+> How many different committee structures are possible?
+> 
+> ---
+> __*SOLUTION:*__
+> $20 \times 19 \times 18 = 6840$
+```
+^8a785a
+
+&nbsp;
+
+## Permutations
+
+````ad-important
+title: ###### Permutations
+> A #Permutation is an ordering of a collection of objects.
+- The fundamental principle of counting can be used to determine the number of _permutations_ of any set of objects.
+- For example, there are six permutations of the set of letters $\{ A,B,C \}: ABC, \, ACB, \, BAC, \, BCA, \, CAB, \,, CBA$
+- Therefore, the number of permutations for $n$ _distinct objects_ can be obtained as:
+$$n(n-1) \dots (3)(2)(1)$$
+
+```ad-note
+For any positive integer $n \geq 0$, the __*factorial symbol*__, $n!$, is defined as follows;
+$$n! = n(n-1) \dots (3)(2)(1) \quad \quad \quad \quad \quad \quad \quad \quad 0! = 1, \quad \text{and} \quad 1! = 1.$$
+```
+````
+
+
+- In [[#^8a785a|Example 6]], we found the number of ways that we can randomly choose three memebrs from a 20-member committee to serve as chair, vice-chair, and secretary.
+- The reasoning that we used to solve this problem can be generalised to the case where we want to choose $k$ objects in an _ordered_ arrangement from $n$ different objects as:
+$$\begin{array}
+(n)(n-1) \dots (n-k+1) &=& \frac{n(n-1) \, \dots \, (n-k+1)(n-k) \, \dots \, (2)(1)}{(n-k) \, \dots \, (2)(1)} \\
+&=& \frac{n!}{(n-k)!}
+\end{array}$$
+
+```ad-note
+The number of permutations of $k$ objects chosen from a group of $n$ objects is:
+$$\frac{n!}{(n-k)!}$$
+```
+
+## Combinations
+
+- In some cases, when choosing a set of objects from a larger set, we _do not_ care about the ordering of the chosen objects.
+- Each distinct group of objects that can be selected, without regard to order, is called a #Combination 
+
+```ad-important
+title: Combinations
+__Number of Combinations of__ $k$ __Objects Chosen from__ $n$ __Objects:__
+The number of different arrangements of $k$ objects chosen from $n$ objects, in which:
+1. The _order_ is not important
+2. The $n$ objects are _distinct_
+3. Repetition of objects is not allowed
+
+is given by:
+$$\begin{pmatrix}
+n \\
+k
+\end{pmatrix}
+= \frac{n!}{k!(n-k)!}$$
+```
+
+
+&nbsp;
+
 ---
+
 # Independant Events
 ---
 # The Multiplication Rule
