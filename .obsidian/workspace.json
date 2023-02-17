@@ -27,9 +27,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "b9a40e96fdcec5d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "e1cab83f0e845b2a",
@@ -47,6 +59,16 @@
             }
           },
           {
+            "id": "8da9bda51959dd40",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/L06_Discrete Random Variables.pdf"
+              }
+            }
+          },
+          {
             "id": "f228a169641fccb1",
             "type": "leaf",
             "state": {
@@ -58,7 +80,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3E3 - Probability & Statistics/5 - Probability.md",
+                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3E3 - Probability & Statistics/5 - Probability.md",
+                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3E3 - Probability & Statistics/5 - Probability.md"
+                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md"
               }
             }
           },
@@ -195,14 +218,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5cb8caa54c012cbd",
+  "active": "b9a40e96fdcec5d1",
   "lastOpenFiles": [
-    "PDF/L05_Probability.pdf",
     "3E3 - Probability & Statistics/5 - Probability.md",
+    "PDF/L06_Discrete Random Variables.pdf",
+    "PDF/L05_Probability.pdf",
     "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
     "3C5 - Telecommunications/14 - notes.md",
     "3E3 - Probability & Statistics/1 - Data Collection.md",
-    "PDF/L06_Discrete Random Variables.pdf",
     "README.md",
     "3D3 - Computer Networks/Router/Router.md",
     "3D3 - Computer Networks/Router/Scheduling.md",
