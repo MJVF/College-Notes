@@ -22,6 +22,7 @@ tags:
 - Conditional_Probability
 - Law_of_Total_Probability
 - Tree_Diagrams
+- Reliability_Analysis
 ---
 
 ### Glossary:
@@ -52,6 +53,8 @@ tags:
 - Independant Events [[#^bb853a| .5.1]] [[#^4ccd06| .5.2]]
 - Intersection of Events (Conditional) [[#^555ae9| .6]]
 - Intersection of Events (Independant) [[#^2b06dc| .7.1]] [[#^0cb1d9| .7.2]]
+- The Law of Total Probability [[#^c59467| .8]]
+- Bayes' Theorem [[#^3e91f4| .9]]
 
 
 &nbsp;
@@ -555,13 +558,12 @@ $\,$
 \end{array}$$
 >![[Pasted image 20230216231059.png|200]]
 
+^c59467
+
 &nbsp;
 
 ```ad-example
 title: EXAMPLE 9
-
-```
-
 > Customers who purchase a certain make of car can order an engine in any of three _small, medium and large_ sizes. The percentage of sold cars with different engine sizes together with the failure rate in emissions test within two years of purchase are presented in the table below. 
 > - What is the probability that a randomly chosen car will fail an emissions test within two years?
 > 
@@ -580,7 +582,7 @@ title: EXAMPLE 9
 > 
 > The probabilities that a car fails a test given different engine sizes are stated in the problem, i.e $P(B|A_1) = 0.10$, $P(B|A_2) = 0.12$, and $P(B|A_3) = 0.15$. Thus, using #Law_of_Total_Probability, we have:
 > $$\begin{array}
-P(B) \, &=& \, \sum_{i=1}^{3} P(B|A_{1}) \cdot P(A_{1}) \\
+.P(B) \, &=& \, \sum_{i=1}^{3} P(B|A_{1}) \cdot P(A_{1}) \\
 &=& (0.10)(0.45) + (0.12)(0.35) + (0.15)(0.20) = 0.117
 \end{array}$$
 >
@@ -589,9 +591,70 @@ P(B) \, &=& \, \sum_{i=1}^{3} P(B|A_{1}) \cdot P(A_{1}) \\
 > Sometimes, problems like this example are solved using #Tree_Diagrams 
 > 
 > ![[Pasted image 20230216233257.png|300]]
+```
+
+^d08ec2
+
+
 
 ---
 # Bayes' Theorem
+
+From the definition of #Conditional_Probability :
+$$P(A \cap B) = P(A|B)P(B) = P(B|A)P(A)$$
+Considering the conditional probability $P(A|B) = \frac{P(A \cap B)}{P(B)}$ and the formual above:
+$$P(A|B) = \frac{P(B|A)P(A)}{P(B)} \quad \text{    for    } \quad P(B) \gt 0$$
+Using this result, we can find $P(A|B)$ in terms of $P(B|A)$. Furthermore, using the #Law_of_Total_Probability , based on Bayes' Theorem, we have:
+$$P(A|B) = \frac{P(B|A)P(A)}{P(B|A)P(A)+P(B|A')P(A')}$$
+
+```ad-important
+title: Bayes' Theorem
+
+If $E_{1}, \, \dots  \, , \, E_{n}$ are $n$ #Mutually_Exclusive and exhaustive events and $B$ is any event, 
+$$P(E_{k}|B) = \frac{P(B|E_{k})P(E_{k})}{\sum_{i=1}^{n}P(B|E_{i})P(E_{i})}$$
+_for_ $P(B) \neq 0$.
+```
+
+^3e91f4
+
+&nbsp;
+
+```ad-example
+title: EXAMPLE 10
+
+> Based on the data that was provided in [[#^d08ec2|Example 9]], consider that a record for a failed emissions test is chosen at _random_. What is the porbability that is for a car with a small engine?
+>  --- 
+>  __*SOLUTION:*__
+>  The event $B$ represents that a car fails an emisions test, and also the events $A_{1}, A_{2}, \text{ and } A_{3}$ as defined in the solution to [[#^d08ec2|Example 9]]. In this example, we wih to find $P(A_{1}|B)$. Using __Bayes' Theorem__, and $P(B|A_1) = 0.1$, $P(B|A_2) = 0.12$, $P(B|A_3)  = 0.15$, we have:
+>  $$P(A_{k}|B) = \frac{P(B|A_{k})P(A_{k})}{\sum_{i=1}^{n}P(B|A_{i})P(A_{i})}$$
+>  $$P(A_{1}|B) = \frac{(0.10)(0.45)}{(0.10)(0.45)+(0.12)(0.35)+(0.15)(0.20)} = 0.385$$
+```
+
+
+&nbsp;
+
 ---
 # Application to Reliability Analysis
+
+```ad-info
+#Reliability_Analysis is the branch of engineering concerned with estimating the _failure rate_ of systems.
+```
+
+
+```ad-example
+title: EXAMPLE 11
+> A system contains two components, $A$,and $B$, connected in series as shown in the following diagram. The system will function only if both components function. The probability that $A$ and $B$ function is given by $P(A) = 0.96$, and $P(B) = 0.92$, respectively. Assume that $A$ and $B$ function _independantly_. Find the probability that the system functions.
+> ![[Pasted image 20230222141403.png|200]]
+> ---
+> __*SOLUTION:*__
+> $$P(\text{system functions}) = P(A \cap B) = P(A)P(B) = (0.96)(0.92) = 0.8832$$
+```
+
+```ad-warning
+title: Exercise:
+Assuming that the two components, $A$ and $B$, in Example 11, were connected in parallel, find the probability that the system functions.
+```
+
+
+
 ---

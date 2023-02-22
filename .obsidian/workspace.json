@@ -4,20 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "68860f65898df5e7",
+        "id": "0b105295d9f31a3b",
         "type": "tabs",
-        "dimension": 59.01398086828551,
         "children": [
           {
-            "id": "2c2ca6a9b990f1e8",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "5cb8caa54c012cbd",
+            "id": "cda3c98ca0400dc3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,52 +20,12 @@
             }
           },
           {
-            "id": "b9a40e96fdcec5d1",
+            "id": "900b3dec3a3d2771",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "e1cab83f0e845b2a",
-        "type": "tabs",
-        "dimension": 40.9860191317145,
-        "children": [
-          {
-            "id": "cfde4167c8a9882d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/L05_Probability.pdf"
-              }
-            }
-          },
-          {
-            "id": "8da9bda51959dd40",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/L06_Discrete Random Variables.pdf"
-              }
-            }
-          },
-          {
-            "id": "f228a169641fccb1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3E3 - Probability & Statistics/5 - Probability.md",
+                "file": "3E3 - Probability & Statistics/FORMULAS.md",
                 "mode": "preview",
                 "source": true
               }
@@ -131,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 257.5110321044922,
-    "collapsed": true
+    "width": 257.5110321044922
   },
   "right": {
     "id": "1f0ec549061dfe63",
@@ -148,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md",
+                "file": "3E3 - Probability & Statistics/FORMULAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md",
+                "file": "3E3 - Probability & Statistics/FORMULAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3E3 - Probability & Statistics/6 - Discrete Random Variables.md"
+                "file": "3E3 - Probability & Statistics/FORMULAS.md"
               }
             }
           },
@@ -218,17 +168,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9a40e96fdcec5d1",
+  "active": "900b3dec3a3d2771",
   "lastOpenFiles": [
     "3E3 - Probability & Statistics/5 - Probability.md",
-    "PDF/L06_Discrete Random Variables.pdf",
-    "PDF/L05_Probability.pdf",
-    "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md",
+    "PDF/3e3/L05_Probability.pdf",
+    "IPv6.md",
+    "Lecture_15_continuous distributions.pdf",
+    "15 -.md",
     "3C5 - Telecommunications/14 - notes.md",
-    "3E3 - Probability & Statistics/1 - Data Collection.md",
-    "README.md",
-    "3D3 - Computer Networks/Router/Router.md",
-    "3D3 - Computer Networks/Router/Scheduling.md",
-    "3D3 - Computer Networks/Router/Buffer Management.md"
+    "PDF/3c5/Lecture_14_PMF of discrete RV.pdf",
+    "PDF/3e3/L04_Numerically_Summarizing_Data.pdf",
+    "PDF/3c5/Lecture_02_Information and signals rep.pdf",
+    "3E3 - Probability & Statistics/4 - Numerically Summarizing Data.md"
   ]
 }

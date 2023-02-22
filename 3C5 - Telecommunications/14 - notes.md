@@ -41,3 +41,11 @@ same average, now calculate variance.
 order doesn't matter
 
 #### page 15
+
+#### page 29
+$\lambda$ is our mean 
+#### page 30
+$\lambda = 2$
+if we have 2 errors per frame, what will our $\lambda$ be for 2 frames?
+
+#### page 32

@@ -10,7 +10,6 @@
 
 $\quad$
 
-testing
 
 ---
 
