@@ -26,7 +26,7 @@ tags:
 
 - ###### __Quantitative Data:__ ^726f4a
 	- __Numeric Data__ that indicates how much or how many. e.g _height, mass, number of children_
-	- Types:
+	- Types: ^b9aa0d
 		- __Continuous Variables:__ variables can take any value in a certain range. They are usually measured according to some scale. e.g _age, height, mass_ (measured to a given accuracy, i.e age in closest year) ^b37fbc
 
 		- __Discrete Variables:__ variables take values from a set that can be listed (commonly integer values). Such variables are often counted. e.g _number of children/subjects passed at leaving cert_ (when a discrete variable takes in a very large number of values, may be treated as continuous) ^ede962
